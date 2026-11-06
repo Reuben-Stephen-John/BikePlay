@@ -839,6 +839,12 @@
     <string name="settings_interface_size">界面大小</string>
     <string name="settings_interface_size_auto">自动</string>
     <string name="settings_interface_size_hint">DiPlay 自身界面中文字和控件的大小。自动模式会在大尺寸低密度屏幕上放大它们。不影响 CarPlay。</string>
+    <string name="settings_bikeplay_ride_preset">骑行预设</string>
+    <string name="settings_bikeplay_ride_preset_description">CarPlay 图标与文字最大（160%%）、大界面、30 fps、关闭 HEVC。重新连接 CarPlay 以应用显示更改。</string>
+    <string name="settings_bikeplay_home_ride_controls">骑行控制</string>
+    <string name="settings_bikeplay_home_ride_controls_hint">出发前调节支架手机亮度和媒体音量。完整选项见设置 → 显示和音频。</string>
+    <string name="settings_bikeplay_ride_brightness">屏幕亮度</string>
+    <string name="settings_bikeplay_ride_media_volume">媒体音量</string>
     <string name="update_check">检查更新</string>
     <string name="update_checking">正在检查…</string>
     <string name="update_up_to_date">已是最新版本</string>

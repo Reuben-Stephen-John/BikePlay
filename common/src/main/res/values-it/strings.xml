@@ -856,6 +856,12 @@
     <string name="settings_interface_size">Dimensione dell’interfaccia</string>
     <string name="settings_interface_size_auto">Automatica</string>
     <string name="settings_interface_size_hint">Dimensione di testo e controlli sulle schermate di DiPlay. Automatica li ingrandisce sugli schermi grandi con bassa densità. CarPlay non è interessato.</string>
+    <string name="settings_bikeplay_ride_preset">Preset guida</string>
+    <string name="settings_bikeplay_ride_preset_description">Icone e testo CarPlay al massimo (160%%), interfaccia grande, 30 fps, HEVC disattivato. Riconnetti CarPlay per applicare le modifiche al display.</string>
+    <string name="settings_bikeplay_home_ride_controls">Controlli di guida</string>
+    <string name="settings_bikeplay_home_ride_controls_hint">Regola luminosità del telefono sul manubrio e volume media prima di partire. Controlli completi in Impostazioni → Display e Audio.</string>
+    <string name="settings_bikeplay_ride_brightness">Luminosità schermo</string>
+    <string name="settings_bikeplay_ride_media_volume">Volume media</string>
     <string name="update_check">Controlla aggiornamenti</string>
     <string name="update_checking">Verifica in corso…</string>
     <string name="update_up_to_date">Sei aggiornato</string>

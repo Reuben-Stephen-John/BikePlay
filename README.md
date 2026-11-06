@@ -2,6 +2,14 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
+## BikePlay (motorcycle fork)
+
+This repository includes **BikePlay** work: use a **handlebar-mounted Android phone** as the CarPlay **receiver**, with your **iPhone in a pocket** as the source (wireless CarPlay or USB). See **[docs/BIKEPLAY.md](docs/BIKEPLAY.md)** for mount setup, maps (driving mode on CarPlay is normal for motorcycles), brightness/volume, and the home **Ride controls** card (**Ride preset**, brightness, media volume).
+
+BikePlay builds on the same `:mobile` app and DiPlay settings today (`com.shihab.diplay`). It is derived from upstream [DiPlay](https://github.com/shihabal3amri/DiPlay) / [xcertplay](https://github.com/shilapi/xcertplay) (GPL-3.0) and DiAuto UI (AGPL-3.0); see [Credits and licenses](docs/THIRD_PARTY_NOTICES.md). **Not Apple-certified.**
+
+---
+
 **CarPlay for compatible BYD Android head units.** Wired and wireless, with the familiar DiAuto interface. Independent app: `com.shihab.diplay`.
 
 > **BYD support scope:** These projects focus on BYD cars. They may work on other brands, but other brands are unsupported and there are no plans to add support or fix brand-specific incompatibilities.

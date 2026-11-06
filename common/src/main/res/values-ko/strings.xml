@@ -871,6 +871,12 @@
     <string name="settings_interface_size">인터페이스 크기</string>
     <string name="settings_interface_size_auto">자동</string>
     <string name="settings_interface_size_hint">DiPlay 자체 화면의 텍스트와 컨트롤 크기입니다. 자동으로 설정하면 밀도가 낮은 대형 화면에서 크기가 커집니다. CarPlay에는 영향을 주지 않습니다.</string>
+    <string name="settings_bikeplay_ride_preset">라이드 프리셋</string>
+    <string name="settings_bikeplay_ride_preset_description">CarPlay 아이콘·텍스트 최대(160%%), 큰 인터페이스, 30 fps, HEVC 끔. 표시 변경을 적용하려면 CarPlay를 다시 연결하세요.</string>
+    <string name="settings_bikeplay_home_ride_controls">라이드 컨트롤</string>
+    <string name="settings_bikeplay_home_ride_controls_hint">출발 전 마운트 폰 밝기와 미디어 볼륨을 조절하세요. 전체 설정은 설정 → 디스플레이 및 오디오에 있습니다.</string>
+    <string name="settings_bikeplay_ride_brightness">화면 밝기</string>
+    <string name="settings_bikeplay_ride_media_volume">미디어 볼륨</string>
     <string name="update_check">업데이트 확인</string>
     <string name="update_checking">확인 중…</string>
     <string name="update_up_to_date">최신 버전입니다</string>
