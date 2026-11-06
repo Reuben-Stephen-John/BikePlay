@@ -716,6 +716,12 @@
     <string name="settings_interface_size">حجم الواجهة</string>
     <string name="settings_interface_size_auto">تلقائي</string>
     <string name="settings_interface_size_hint">حجم النص وعناصر التحكم في شاشات DiPlay. يكبّرها الوضع التلقائي على الشاشات الكبيرة منخفضة الكثافة. لا يتأثر CarPlay.</string>
+    <string name="settings_bikeplay_ride_preset">إعداد الركوب</string>
+    <string name="settings_bikeplay_ride_preset_description">أكبر حجم لأيقونات ونص CarPlay (160%%)، واجهة كبيرة، 30 إطارًا/ث، HEVC مغلق. أعد الاتصال بـ CarPlay لتطبيق تغييرات العرض.</string>
+    <string name="settings_bikeplay_home_ride_controls">عناصر تحكم الركوب</string>
+    <string name="settings_bikeplay_home_ride_controls_hint">اضبط سطوع هاتف التثبيت وصوت الوسائط قبل الانطلاق. التحكم الكامل في الإعدادات → العرض والصوت.</string>
+    <string name="settings_bikeplay_ride_brightness">سطوع الشاشة</string>
+    <string name="settings_bikeplay_ride_media_volume">صوت الوسائط</string>
     <string name="update_check">البحث عن تحديثات</string>
     <string name="update_checking">جارٍ البحث…</string>
     <string name="update_up_to_date">لديك آخر إصدار</string>

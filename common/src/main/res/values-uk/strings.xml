@@ -728,6 +728,12 @@
     <string name="settings_interface_size">Розмір інтерфейсу</string>
     <string name="settings_interface_size_auto">Автоматично</string>
     <string name="settings_interface_size_hint">Розмір тексту й елементів керування на екранах DiPlay. В автоматичному режимі вони збільшуються на великих екранах із низькою щільністю. CarPlay не змінюється.</string>
+    <string name="settings_bikeplay_ride_preset">Пресет поїздки</string>
+    <string name="settings_bikeplay_ride_preset_description">Найбільший розмір значків і тексту CarPlay (160%%), великий інтерфейс, 30 кадр/с, HEVC вимк. Перепідключіть CarPlay, щоб застосувати зміни екрана.</string>
+    <string name="settings_bikeplay_home_ride_controls">Керування в поїздці</string>
+    <string name="settings_bikeplay_home_ride_controls_hint">Налаштуйте яскравість телефона на кермі та гучність медіа перед виїздом. Повні налаштування: Налаштування → Екран і звук.</string>
+    <string name="settings_bikeplay_ride_brightness">Яскравість екрана</string>
+    <string name="settings_bikeplay_ride_media_volume">Гучність медіа</string>
     <string name="update_check">Перевірити оновлення</string>
     <string name="update_checking">Перевірка…</string>
     <string name="update_up_to_date">У вас вже найновіша версія</string>

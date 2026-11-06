@@ -22,6 +22,7 @@ import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.RippleDrawable
 import android.media.AudioFormat
+import android.media.AudioManager
 import android.media.AudioTrack
 import android.media.MediaFormat
 import android.net.Uri
@@ -52,6 +53,8 @@ import com.shilapi.xcertplay.airplay.CarPlayClusterDisplay
 import com.shilapi.xcertplay.airplay.CarPlayDisplayScale
 import com.shilapi.xcertplay.airplay.ClusterSpeedometerOverlay
 import com.shilapi.xcertplay.airplay.ClusterTurnCardOverlay
+import com.shilapi.xcertplay.bikeplay.BikePlayRidePreset
+import com.shilapi.xcertplay.bikeplay.RideSystemControls
 import com.shilapi.xcertplay.backup.SettingsBackupCodec
 import com.shilapi.xcertplay.backup.SettingsBackupEndpoint
 import com.shilapi.xcertplay.backup.SettingsBackupServer
@@ -1060,8 +1063,45 @@ class DiPlayActivity : ComponentActivity(), AppAppearanceOwner {
             body.addView(space(24))
             body.addView(right)
         }
+        body.addView(rideQuickControlsCard(compact), LinearLayout.LayoutParams(-1, -2).apply {
+            topMargin = dp(if (compact) SETTINGS_BLOCK_GAP_DP else 26)
+        })
         setupError?.let { body.addView(label(it, 16, WARNING).apply { setPadding(0, dp(16), 0, 0) }) }
         content.addView(body)
+    }
+
+    private fun rideQuickControlsCard(compact: Boolean): LinearLayout = card().apply {
+        addView(label(getString(R.string.settings_bikeplay_home_ride_controls), if (compact) 16 else 18, TEXT, true))
+        addView(label(getString(R.string.settings_bikeplay_home_ride_controls_hint), 14, MUTED).apply {
+            setPadding(0, dp(6), 0, dp(12))
+        })
+        toggle(this, getString(R.string.settings_bikeplay_ride_preset),
+            getString(R.string.settings_bikeplay_ride_preset_description),
+            BikePlayRidePreset.isActive(this@DiPlayActivity)) { enabled ->
+            if (enabled && !BikePlayRidePreset.isActive(this@DiPlayActivity)) {
+                val recreate = BikePlayRidePreset.apply(this@DiPlayActivity)
+                markReconnectNeeded()
+                if (recreate) recreate() else render()
+            }
+        }
+        val audio = getSystemService(AudioManager::class.java)
+        val brightnessSteps = RideSystemControls.brightnessSteps
+        addView(overlaySliderRow(
+            getString(R.string.settings_bikeplay_ride_brightness),
+            brightnessSteps,
+            RideSystemControls.readBrightness(this@DiPlayActivity),
+        ) { value -> "$value" }.apply {
+            onSave = { RideSystemControls.writeBrightness(this@DiPlayActivity, it) }
+        })
+        addView(space(8))
+        val volumeSteps = RideSystemControls.mediaVolumeSteps(audio)
+        addView(overlaySliderRow(
+            getString(R.string.settings_bikeplay_ride_media_volume),
+            volumeSteps,
+            RideSystemControls.readMediaVolume(audio),
+        ) { value -> "$value" }.apply {
+            onSave = { RideSystemControls.writeMediaVolume(audio, it) }
+        })
     }
 
     // Only the category scrolls, so the rail keeps showing where the driver is.

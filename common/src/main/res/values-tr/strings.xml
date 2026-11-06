@@ -840,6 +840,12 @@
     <string name="settings_interface_size">Arayüz boyutu</string>
     <string name="settings_interface_size_auto">Otomatik</string>
     <string name="settings_interface_size_hint">DiPlay\'in kendi ekranlarındaki metin ve denetimlerin boyutu. Otomatik, düşük yoğunluklu büyük ekranlarda bunları büyütür. CarPlay etkilenmez.</string>
+    <string name="settings_bikeplay_ride_preset">Sürüş ön ayarı</string>
+    <string name="settings_bikeplay_ride_preset_description">En büyük CarPlay simge ve metin (160%%), büyük arayüz, 30 fps, HEVC kapalı. Görüntü değişiklikleri için CarPlay\'i yeniden bağlayın.</string>
+    <string name="settings_bikeplay_home_ride_controls">Sürüş denetimleri</string>
+    <string name="settings_bikeplay_home_ride_controls_hint">Yola çıkmadan önce montaj telefonunun parlaklığını ve medya sesini ayarlayın. Tam denetimler Ayarlar → Ekran ve Ses.</string>
+    <string name="settings_bikeplay_ride_brightness">Ekran parlaklığı</string>
+    <string name="settings_bikeplay_ride_media_volume">Medya sesi</string>
     <string name="update_check">Güncellemeleri kontrol et</string>
     <string name="update_checking">Kontrol ediliyor…</string>
     <string name="update_up_to_date">Güncelsiniz</string>
